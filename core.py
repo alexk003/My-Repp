@@ -71,16 +71,6 @@ class VkTools():
         return result
 
 
-# if __name__ == '__main__':
 tools = VkTools(acces_token)
-    # info = tools.get_profile_info(789657038)
-    # if info:
-    #     print(tools.get_profile_info(789657038))
-    # else:
-    #     pass
-    # profiles = tools.user_serch(1, 20, 40, 1)
-    # print(profiles)
-# photos = tools.photos_get(578904563)
-# print(photos)
 
 

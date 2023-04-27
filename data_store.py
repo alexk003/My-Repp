@@ -2,34 +2,7 @@
 import psycopg2
 
 conn = psycopg2.connect(database="postgres", user="postgres", password="*6352a17")
-# import sqlalchemy  as sq
-# from sqlalchemy.orm import declarative_base
-# from sqlalchemy import create_engine, MetaData
-# from sqlalchemy.orm import sessionmaker
-#
-# DSN = 'postgresql://postgres:*6352a17@localhost:5431/netology_db'
-#
-# engine = sqlalchemy.create_engine(DSN)
-#
-# create_tables(engine)
-#
-# Base = declarative_base()
-#
-# Session = sessionmaker(bind=engine)
-#
-# session = Session()
-#
-# create_tables
-#
-# session.close
-#
-# class Viewed(Base):
-#     __table_name__ = "viewed"
-#
-#     profile_id = sq.Column(sq.Integer, primary_key=True)
-#     worksheet_id = sq.Column(sq.Integer, unique=True)
-#
-# Base.metadata.create_all(engine)
+
 
 def clear_table(conn):
     with conn.cursor() as cur:
