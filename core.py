@@ -5,6 +5,7 @@ from operator import itemgetter
 
 
 class VkTools():
+
     def __init__(self, token):
         self.ext_api = vk_api.VkApi(token=token)
 
