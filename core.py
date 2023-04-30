@@ -32,7 +32,7 @@ class VkTools():
                                             'age_to': age_to,
                                             'sex': sex,
                                             'status': relation,
-                                            'count': 25,
+                                            'count': 8,
                                             'offset': offset
                                             })
 

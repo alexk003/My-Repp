@@ -48,18 +48,14 @@ class BotInterface:
                     else:
                         sex = int(input('ошибка определения пола, введите Ваш пол:'
                                         ' 1 - если Вы женщина, 2 - если Вы мужчина'))
-                    result_prof = core.tools.user_serch(city_id, age_from, age_to, sex, 6, offset)
+                    result_prof = core.tools.user_serch(city_id, age_from, age_to, sex, 1, offset)
                     for profile in result_prof:
                         offset += 1
                         id_found = profile.get('id')
                         id_list = data_store.from_db(conn, event.user_id)
-                        print(id_list)
-                        print(id_found)
-                        print(id_list[0][0])
                         list_id =[]
                         for x in id_list:
                             list_id.append(x[0])
-                        print(list_id)
                         if id_found in list_id:
                             continue
                         else:
