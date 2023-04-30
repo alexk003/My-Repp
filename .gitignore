@@ -1,7 +1,7 @@
 # created by virtualenv automatically
- Lib/
- Scripts/
- __pycache__/
+ Lib
+ Scripts
+ __pycache__
  config.py
- include/
+ include
  pyvenv.cfg
