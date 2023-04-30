@@ -40,5 +40,3 @@ def from_db(conn, user_id):
             )
         id_list = cur.fetchall()
     return id_list
-
-# дальше просто по циклу for id in id_list(conn), но это без класса (по принципу 5 задания из БД)
